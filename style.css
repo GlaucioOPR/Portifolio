@@ -4,6 +4,7 @@
     outline: no;  
 }
 
+
 html, body {
     position: relative;
     width: 100%;
@@ -27,6 +28,15 @@ body {
     background-size: cover;
 }
 
+.block article{
+    border-radius: 10% / 30px;
+    border-style: outset;
+}
+
+.block ::after{
+    box-shadow: 0 0 0 250px #522d5b;
+}
+
 .wrap {
     position: relative;
     width: 100%;
@@ -42,7 +52,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgba(0,0,0,.5);
     padding: .5rem;
 }
 
@@ -52,29 +61,44 @@ header h1 {
 }
 
 nav {
-    background: white;
+    height: 100vh;
+    width: 250px;
+    float: left;
+    background: #1e1e1e;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+nav img {
+    position: relative;
+    top: 30px;
+    right: 35px;
+    align-self: center;
+    border-color: #b93632;
+    border-style: solid;
+    border-radius: 12px;
 }
 
 nav a {
+    position: relative;
+    top: 50px;
+    width: 240px;
     padding: 1rem;
     text-decoration: none;
-    color: #333;
+    color: white;
     display: flex;
     align-items: center;
-}
-
-nav a:first-child {
-    margin-right: auto;
+    line-height: 2.5;
+    border-radius: 12px;
 }
 
 nav a:hover {
     color: white;
-    background: #333;
+    background: #b93632;
+    border-left: 5px solid #593632;
 }
 
 nav span {
@@ -89,18 +113,17 @@ main {
     position: relative;
     height: 100%;
     flex-grow: 1;
-}
-
-main > article {
     background: rgba(255,255,255,.9);
     position: relative;
     height: 100%;
     color: #333;
     padding: 1rem;
+    overflow: auto;
 }
 
+
 footer {
-    background: rgb(54, 78, 97);
+    background: #b93632;
     text-align: center;
     color: #fff;
 }
