@@ -29,7 +29,16 @@ body {
 }
 
 .block article{
-    border-radius: 10% / 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    border-style: outset;
+}
+
+.title h2{
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
     border-style: outset;
 }
 
